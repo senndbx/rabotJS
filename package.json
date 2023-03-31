@@ -1,0 +1,21 @@
+{
+  "name": "rabotjs",
+  "version": "1.0.0",
+  "dependencies": {
+    "bufferutil": "^4.0.7",
+    "discord.js": "^14.8.0",
+    "erlpack": "github:discord/erlpack",
+    "utf-8-validate": "^6.0.3",
+    "zlib-sync": "^0.1.8"
+  },
+  "description": "RabotJS v2 (Migration from Red)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "senndbx",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.37.0"
+  }
+}
