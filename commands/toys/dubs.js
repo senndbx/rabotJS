@@ -1,10 +1,10 @@
-const { SlashCommandBuilder } = require("discord.js");
+const { SlashCommandBuilder, inlineCode } = require("discord.js");
 
-function dubs(min, max) {
+function digits(min, max) {
   let dubsResult = Math.random() * (max - min) + min;
   dubsResult = Math.round(dubsResult);
   dubsResult = dubsResult.toString();
-  return dubsResult;
+  return inlineCode(dubsResult);
 }
 
 module.exports = {
@@ -14,7 +14,10 @@ module.exports = {
     .setDescription("RNG, get them dubs!"),
   async execute(interaction) {
     return interaction.reply(
-      `${interaction.user.username} got >>${dubs(100000000, 500000000)}!`
+      `${interaction.user.username}, check 'em >> ${digits(
+        100000000,
+        500000000
+      )}!`
     );
   },
 };
